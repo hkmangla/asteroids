@@ -708,8 +708,6 @@ Asteroid = function () {
     if (other.name == "bullet") Game.score += 120 / this.scale;
     this.scale /= 3;
     if (this.scale > 0.5) {
-      // Hello friends
-      
       this.breakIntoFragments();
     }
     Game.explosionAt(other.x, other.y);
